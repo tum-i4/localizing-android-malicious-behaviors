@@ -1,4 +1,4 @@
-# extracting-android-malicious-behaviors
+# localizing-android-malicious-behaviors
 
 The lack of ground truth about malicious behaviors exhibited by current Android malware forces researchers to embark upon a
 lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically extract malicious behaviors from representations of apps’ runtime behaviors. We will further enhance the code base, add more features to the framework, and upload the results achieved on real-world Android malware.
