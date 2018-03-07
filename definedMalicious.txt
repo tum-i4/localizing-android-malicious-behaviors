@@ -1,0 +1,5 @@
+Airpush: android.app.ContextImpl.registerReceiver,android.content.Context.startService,java.net.URL.openConnection
+Dogwin: android.os.SystemProperties.get,javax.crypto.Cipher.doFinal,java.net.URL.openConnection
+FakeInst: android.app.ContextImpl.registerReceiver,android.app.ActivityThread.handleReceiver,android.telephony.SmsManager.sendTextMessage
+Mecor: android.app.Activity.startActivity,android.app.ContextImpl.registerReceiver,java.net.URL.openConnection
+Fusob: android.content.Context.startService,android.app.ContextImpl.registerReceiver,javax.crypto.Cipher.doFinal,dalvik.system.DexFile.loadDex
