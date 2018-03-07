@@ -1,7 +1,7 @@
 # localizing-android-malicious-behaviors
 
 The lack of ground truth about malicious behaviors exhibited by current Android malware forces researchers to embark upon a
-lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically extract malicious behaviors from representations of apps’ runtime behaviors. We will further enhance the code base, add more features to the framework, and upload the results achieved on real-world Android malware.
+lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically localize malicious behaviors from representations of apps’ runtime behaviors. We will further enhance the code base, add more features to the framework, and upload the results achieved on real-world Android malware.
 
 ## Dependencies
 The current implementation depends on the following tools:
@@ -52,9 +52,9 @@ The **classification** process of API traces can be found in the file `classific
 * ```train(fixedLength, pathToGoodware, pathToDictionary)```
 * ```computeLogForOneSample(model, sigma, sample)```
 
-### Extraction (Localization of Malicious Behaviors)
+### Localization of Malicious Behaviors
 #### Using Association Rules
-The **extraction (or localization)** of malicious segments with Association Rules is covered by the module `localizationAssoc.py`. In this module the localization takes place in the functions `localize` and `localizeRealData` depending on which data set we use. We apply the third-party too *Apyori* to generate association rules in the function `calculateRules`. For the measurement of the method we calculate the metric `appearance` in the function `checkForMalBehavior`.
+The **localization** of malicious segments with Association Rules is covered by the module `localizationAssoc.py`. In this module the localization takes place in the functions `localize` and `localizeRealData` depending on which data set we use. We apply the third-party too *Apyori* to generate association rules in the function `calculateRules`. For the measurement of the method we calculate the metric `appearance` in the function `checkForMalBehavior`.
 
 * ```localize(pathToFolder, pathToDictionary, thresholdsAndLengths, support, confidence, allMalBehaviors, expId)```
 * ```localizeRealData(pathToFolder, pathToDictionary, thresholdsAndLengths, support, confidence)```
@@ -62,7 +62,7 @@ The **extraction (or localization)** of malicious segments with Association Rule
 
 #### Using Hidden Markov Models
 
-The module `localizationBrute.py` handles the localization of malevolent segments in the traces by using Hidden Markov Models. The functions `localize` and `localizeRealData` contain the main process of localization on the different kinds of data sets. We calculate these two metrics that check whether the malicious behaviors have been extracted and how different is the recovered behavior from the one inserted in the API call trace in the functions `checkForBehavior` and `computeDifference`, respectively.
+The module `localizationBrute.py` handles the localization of malevolent segments in the traces by using Hidden Markov Models. The functions `localize` and `localizeRealData` contain the main process of localization on the different kinds of data sets. We calculate these two metrics that check whether the malicious behaviors have been localized and how different is the recovered behavior from the one inserted in the API call trace in the functions `checkForBehavior` and `computeDifference`, respectively.
 
 * ```localize(pathToLogFiles, modelsArray, pathToDictionary, thresholdsAndLengths, minLengthBlocks, malBehavior, expId, malBehaviorNumber)```
 * ```localizeRealData(pathToLogFiles, modelsArray, pathToDictionary, thresholdsAndLengths, minLengthBlocks)```
