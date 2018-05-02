@@ -71,7 +71,7 @@ The module `localizationBrute.py` handles the localization of malevolent segment
 
 ## Citation and Contact
 
-For more information about the design and implementation of the tool, please refer to the paper cited below. Kindly consider citing our GoldRusher paper, if you find it useful in your research.
+For more information about the design and implementation of the tool, please refer to the paper cited below. Kindly consider citing our paper, if you find it useful in your research.
 
 ```
 Coming Soon
