@@ -1,7 +1,7 @@
 # localizing-android-malicious-behaviors
 
 The lack of ground truth about malicious behaviors exhibited by current Android malware forces researchers to embark upon a
-lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically localize malicious behaviors from representations of apps’ runtime behaviors. We will further enhance the code base, add more features to the framework, and upload the results achieved on real-world Android malware.
+lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically localize malicious behaviors from representations of apps’ runtime behaviors. We are currently enhancing the code and adding more features to it. You can find the enhanced code under [trout-catchers][https://github.com/tum-i22/troutcatchers].
 
 ## Dependencies
 The current implementation depends on the following tools:
@@ -69,7 +69,13 @@ The module `localizationBrute.py` handles the localization of malevolent segment
 * ```computeDifference(entry, malBehavior)```
 * ```checkForBehavior(calls, malBehavior)```
 
-## Contact
+## Citation and Contact
+
+For more information about the design and implementation of the tool, please refer to the paper cited below. Kindly consider citing our GoldRusher paper, if you find it useful in your research.
+
+```
+Coming Soon
+```
 
 We are constantly updating the source code and its corresponding documentation. However, should you have any inquiries about installing and using the code, please contact us:
 
