@@ -1,7 +1,7 @@
 # localizing-android-malicious-behaviors
 
 The lack of ground truth about malicious behaviors exhibited by current Android malware forces researchers to embark upon a
-lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically localize malicious behaviors from representations of apps’ runtime behaviors. We are currently enhancing the code and adding more features to it. You can find the enhanced code under [trout-catchers][https://github.com/tum-i22/troutcatchers].
+lengthy process of manually analyzing malware instances. This repository contains our initial implementation of a method to automatically localize malicious behaviors from representations of apps’ runtime behaviors. We are currently enhancing the code and adding more features to it. You can find the enhanced code under [trout-catchers](https://github.com/tum-i22/troutcatchers).
 
 ## Dependencies
 The current implementation depends on the following tools:
