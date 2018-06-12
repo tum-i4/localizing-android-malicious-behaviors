@@ -71,10 +71,17 @@ The module `localizationBrute.py` handles the localization of malevolent segment
 
 ## Citation and Contact
 
-For more information about the design and implementation of the tool, please refer to the paper cited below. Kindly consider citing our paper, if you find it useful in your research.
+For more information about the design and implementation of the tool, please refer to our [to appear] paper cited below. Kindly consider citing our paper, if you find it useful in your research.
 
 ```
-Coming Soon
+@inproceedings{salem2018idea,
+  title={Idea: Automatic Localization of Malicious Behaviors in Android Malware with Hidden Markov Models},
+  author={Salem, Aleieldin, Schmidt, Tabea and Pretschner, Alexander},
+  booktitle={International Symposium on Engineering Secure Software and Systems},
+  pages={To Appear},
+  year={2018},
+  organization={Springer}
+}
 ```
 
 We are constantly updating the source code and its corresponding documentation. However, should you have any inquiries about installing and using the code, please contact us:
